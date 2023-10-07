@@ -15,8 +15,8 @@ export default function HeroSection() {
                 </h1>
 
                 <p className="hero__subtitle">
-                Simplifique sua experiência de aluguel de carros
-                com nosso processo de reserva sem esforço.
+                    Simplifique sua experiência de aluguel de carros
+                    com nosso processo de reserva sem esforço.
                 </p>
 
                 <CustomButton
@@ -26,14 +26,14 @@ export default function HeroSection() {
                     handleClick={handleScroll}
                 />
 
-                <div className="hero__image-container">
-                    <div className="hero__image">
-                        <Image src='/hero.png' alt="hero" fill 
-                        className="object-contain"/>
-
-                        <div className="hero__image-overlay"/>
-                    </div>
+            </div>
+            <div className="hero__image-container">
+                <div className="hero__image">
+                    <Image src='/hero.png' alt="hero" fill
+                        className="object-contain" />
                 </div>
+
+                <div className="hero__image-overlay" />
             </div>
         </section>
     )

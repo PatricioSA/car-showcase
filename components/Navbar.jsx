@@ -10,7 +10,7 @@ export default function Navbar() {
                 <Link href='/'>
                     <Image
                         src='/logo.svg'
-                        alt="Logo"
+                        alt="Car Hub Logo"
                         width={118}
                         height={18}
                         className="object-contain"
@@ -20,7 +20,7 @@ export default function Navbar() {
                 <CustomButton
                     title='Entrar'
                     containerStyles='text-primary-blue
-                    rounded-full min-w-[130px]'
+                    rounded-full bg-white min-w-[130px]'
                 />
             </nav>
         </header>
