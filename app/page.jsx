@@ -1,9 +1,16 @@
-import { CustomFilter, HeroSection, SearchBar } from '@/components'
+import { CarCard, CustomFilter, HeroSection, SearchBar } from '@/components'
 import { fetchCars } from '@/utils'
 import Image from 'next/image'
 
 export default async function Home() {
   const allCars = await fetchCars()
+
+  //coverts miles per gallon to kilometers per liter
+  allCars.forEach((item) => {
+    item.city_mpg *= 0.425.toFixed(2)
+    item.combination_mpg *= 0.425.toFixed(2)
+    item.highway_mpg *= 0.425.toFixed(2)
+  })
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars
 
@@ -32,7 +39,9 @@ export default async function Home() {
         {!isDataEmpty ? (
           <section>
             <div className='home__cars-wrapper'>
-
+              {allCars?.map((car) => (
+                <CarCard car={car}/>
+              ))}
             </div>
           </section>
         ) : (
