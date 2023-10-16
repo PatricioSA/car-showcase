@@ -1,6 +1,6 @@
 import { CarCard, CustomFilter, HeroSection, SearchBar } from '@/components'
 import { fuels, yearsOfProduction } from '@/constants'
-import { fetchCars } from '@/utils'
+import { fetchCars } from '@/apiCars'
 import Image from 'next/image'
 
 export default async function Home({searchParams}) {
