@@ -13,9 +13,9 @@ export default async function Home({searchParams}) {
 
   //coverts miles per gallon to kilometers per liter
   allCars.forEach((item) => {
-    item.city_mpg *= 0.425.toFixed(2)
-    item.combination_mpg *= 0.425.toFixed(2)
-    item.highway_mpg *= 0.425.toFixed(2)
+    item.city_mpg = (item.city_mpg * 0.425).toFixed(1)
+    item.combination_mpg = (item.combination_mpg * 0.425).toFixed(1)
+    item.highway_mpg = (item.highway_mpg * 0.425).toFixed(1)
   })
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars
