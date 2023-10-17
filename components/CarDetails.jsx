@@ -54,7 +54,9 @@ const CarDetails = ({ isOpen, closeModal, car }) => {
                                 bg-white p-6 text-left shadow-xl transition-all
                                 flex flex-col gap-5'>
                                     <button className='absolute top-2 right-2 z-10
-                                    w-fit p-2 bg-primary-blue-100 rounded-full'>
+                                    w-fit p-2 bg-primary-blue-100 rounded-full'
+                                        onClick={closeModal}
+                                    >
                                         <Image
                                             src='/close.svg'
                                             alt='close'
@@ -124,7 +126,7 @@ const CarDetails = ({ isOpen, closeModal, car }) => {
                                                 gap-5 w-full text-right' key={key}>
                                                     <h4 className='text-grey capitalize'>
                                                         {traduçãoPtBr[key]}</h4>
-                                                    <p className='font-semibold'>{value}</p>
+                                                    <p className='font-semibold capitalize'>{value}</p>
                                                 </div>
                                             ))}
                                         </div>
