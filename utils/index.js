@@ -28,10 +28,10 @@ export const calculateCarRent = (city_mpg, year) => {
     const kilometerFactor = 0.1
     const yearFactor = 0.05
 
-    const mileageRate = (city_mpg * 0.425) * kilometerFactor
+    const kilometerRate = city_mpg * kilometerFactor
     const ageRate = (new Date().getFullYear() - year) * yearFactor
 
-    const rentalRatePerDay = basePricePerDay + ageRate + mileageRate
+    const rentalRatePerDay = basePricePerDay + ageRate + kilometerRate
 
     return rentalRatePerDay.toFixed(0)
 }
