@@ -51,7 +51,7 @@ export default function CarCard({ car }) {
                             height={20}
                         />
                         <p className="text-[14px]">
-                            {transmission === 'a' ? 'Automatic' : 'Manual'}
+                            {transmission === 'a' ? 'Automático' : 'Manual'}
                         </p>
                     </div>
                     <div className="flex flex-col items-center gap-2">
