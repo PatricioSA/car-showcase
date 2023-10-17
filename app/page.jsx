@@ -1,7 +1,6 @@
-import { CarCard, CustomFilter, HeroSection, SearchBar } from '@/components'
+import { CarCard, CustomFilter, HeroSection, SearchBar, ShowMoreButton } from '@/components'
 import { fuels, yearsOfProduction } from '@/constants'
 import { fetchCars } from '@/apiCars'
-import Image from 'next/image'
 
 export default async function Home({searchParams}) {
   const allCars = await fetchCars({
@@ -46,10 +45,15 @@ export default async function Home({searchParams}) {
         {!isDataEmpty ? (
           <section>
             <div className='home__cars-wrapper'>
-              {allCars?.map((car) => (
-                <CarCard car={car}/>
+              {allCars?.map((car, index) => (
+                <CarCard key={index} car={car}/>
               ))}
             </div>
+
+            <ShowMoreButton
+              pageNumber={(searchParams.limit || 10) / 10}
+              isNext={(searchParams.limit || 10) > allCars.length}
+            />
           </section>
         ) : (
           <div className='home__error-container'>
