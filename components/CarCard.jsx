@@ -35,6 +35,7 @@ export default function CarCard({ car }) {
                     src={generateCarImageUrl(car)}
                     alt="Modelo do carro"
                     fill
+                    sizes="max-width: 200px"
                     priority
                     className="object-contain"
                 />

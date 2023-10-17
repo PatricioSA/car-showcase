@@ -29,7 +29,7 @@ export default function HeroSection() {
             </div>
             <div className="hero__image-container">
                 <div className="hero__image">
-                    <Image src='/hero.png' alt="hero" fill
+                    <Image src='/hero.png' alt="hero" fill sizes="(max-width: 768px)"
                         className="object-contain" />
                 </div>
 
