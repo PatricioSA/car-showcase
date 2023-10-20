@@ -4,7 +4,11 @@ import Image from 'next/image'
 
 export default function HeroSection() {
     const handleScroll = () => {
+        const nextSection = document.getElementById("discover");
 
+        if (nextSection) {
+            nextSection.scrollIntoView({ behavior: "smooth" });
+        }
     }
 
     return (
