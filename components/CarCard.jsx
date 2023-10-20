@@ -83,7 +83,7 @@ export default function CarCard({ car }) {
                     <CustomButton
                         title='Ver mais'
                         containerStyles='w-full py-[16px] rounded-full
-                        bg-primary-blue'
+                        bg-my-orange'
                         textStyles='text-white text-[14px] leadin-[17px]
                         font-bold'
                         rightIcon='/right-arrow.svg'

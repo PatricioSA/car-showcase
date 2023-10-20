@@ -24,9 +24,13 @@ module.exports = {
         },
         grey: "#747A88",
       },
+      backgroundColor: {
+        "my-orange": "#ff5000",
+        "secondary-orange": "#fff7f5",
+      },
       backgroundImage: {
         'pattern': "url('/pattern.png')",
-        'hero-bg': "url('/hero-bg.png')"
+        'hero-bg': "url('/hero-bg.webp')"
       }
     },
   },

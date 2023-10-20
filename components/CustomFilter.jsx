@@ -43,7 +43,7 @@ const CustomFilter = ({ title, options }) => {
                                 value={option}
                                 className={({ active }) => `relative cursor-default
                                 select-none py-2 px-4 ${active ?
-                                        'bg-primary-blue text-white' :
+                                        'bg-my-orange text-white' :
                                         'text-gray-900'}`}
                             >
                                 <span className="block truncate">

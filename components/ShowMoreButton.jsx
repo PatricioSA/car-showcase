@@ -19,7 +19,7 @@ const ShowMoreButton = ({ pageNumber, isNext }) => {
             {!isNext && (
                 <CustomButton
                     title='Mostrar Mais'
-                    containerStyles='bg-primary-blue rounded-full text-white'
+                    containerStyles='bg-my-orange rounded-full text-white'
                     handleClick={handleNavigation}
                 />
             )}

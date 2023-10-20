@@ -21,7 +21,7 @@ export default function HeroSection() {
 
                 <CustomButton
                     title='Encontre Carros'
-                    containerStyles='bg-primary-blue text-white rounded-full
+                    containerStyles='bg-my-orange text-white rounded-full
                     mt-10'
                     handleClick={handleScroll}
                 />
